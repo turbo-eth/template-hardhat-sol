@@ -2,9 +2,10 @@ import { HardhatUserConfig } from 'hardhat/config';
 import { HardhatNetworkAccountUserConfig } from 'hardhat/types';
 
 // 🔐 Accounts
-const MNEMONIC = process.env.MNEMONIC || "test test test test test test test test test test test junk";
-const TESTNET_PK_DEPLOYER = process.env.TESTNET_PK_DEPLOYER || '' as string;
-const MAINNET_PK_DEPLOYER = process.env.MAINNET_PK_DEPLOYER || '' as string;
+const MNEMONIC =
+  process.env.MNEMONIC || 'test test test test test test test test test test test junk';
+const TESTNET_PK_DEPLOYER = process.env.TESTNET_PK_DEPLOYER || ('' as string);
+const MAINNET_PK_DEPLOYER = process.env.MAINNET_PK_DEPLOYER || ('' as string);
 
 // ⚪ Ethereum
 const ETHEREUM_MAINNET_RPC_URL = process.env.ETHEREUM_MAINNET_RPC_URL;
